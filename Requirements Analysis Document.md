@@ -7,10 +7,10 @@
   2. Scope of the system   
   The system needs to allow the user to ask a multitude of simple commands, where the system will handle said commands using all english written books from the Project Gutenberg, the system will also contain related data about cities to handle some of the simple commands the user may ask.
   
-  3. Objectives and success criteria of the project
+  3. Objectives and success criteria of the project   
   The system must be able to handle all the commands using any of the databases it has, aswell as handling said commands in a optimal time that allows for human reactionary use.
   
-  4. Definitions, acronyms, and abbreviations
+  4. Definitions, acronyms, and abbreviations   
   the term commands are the reader friendly version of database queries, given the system will both handle sequential query language based database and graph based database, we choose to simply use commands as a broad term.   
   
   when mentioning the system we mean the full product, both databases, API and user interface for reduction of redundancy, specification will be used on a moment to moment basis.
@@ -19,7 +19,7 @@
   [Database Assignment paper](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material/blob/master/assignments/Project%20Description.ipynb)   
   [Test assignment paper](https://github.com/datsoftlyngby/soft2018spring-test-teaching-material/blob/master/exercises/Final%20Assignment%202018.pdf)
   
-  6. Overview
+  6. Overview   
   The System will be a server based system that allows users to access the systems databases through the use of a web browser, the web browser will present predetermined commands that can be filled out with information from the user, which then will be handled by the API using the database to return a answer to the users command.
   
 ## Current system
@@ -31,9 +31,9 @@
 ### Functional requirements
 The product must support atleast 2 different databases with two different paradigms.   
 The product must also allow the end user to execute at minimum the following commands:   
-1. Given a city name your application returns all book titles with corresponding authors that mention this city.
-2. Given a book title, your application plots all cities mentioned in this book onto a map.
-3. Given an author name your application lists all books written by that author and plots all cities mentioned in any of the books onto a map.
+1. Given a city name your application returns all book titles with corresponding authors that mention this city.   
+2. Given a book title, your application plots all cities mentioned in this book onto a map.   
+3. Given an author name your application lists all books written by that author and plots all cities mentioned in any of the books onto a map.   
 4. Given a geolocation, your application lists all books mentioning a city in vicinity of the given geolocation.   
 The Database must all at minimum contain the Author's name, the books title, names of cities, the geolocations of said cities and thier occurences in test, aswell as any other relevant information that is needed.   
 
