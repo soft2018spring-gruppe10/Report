@@ -12,7 +12,6 @@
   
   4. Definitions, acronyms, and abbreviations   
   the term commands are the reader friendly version of database queries, given the system will both handle sequential query language based database and graph based database, we choose to simply use commands as a broad term.   
-  
   when mentioning the system we mean the full product, both databases, API and user interface for reduction of redundancy, specification will be used on a moment to moment basis.
   
   5. References   
