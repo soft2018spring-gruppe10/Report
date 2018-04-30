@@ -43,3 +43,18 @@ As a user, i want to enter an authors name and get all books by that author and 
 2) The user should be able to get all books by the requested author.
 
 3) The user should be able to see a map with plots of all cities.
+
+___
+
+##### User story 4:
+
+As a user, i want to give a location and get all books which mentions a city in the vicinity of that location, so i can find a book that i want to read.
+
+##### Acceptance Criteria:
+
+1) The user should be able to specify a location
+
+2) The user should be able to get all books which mentions a city in the vicinity of the location
+
+
+
