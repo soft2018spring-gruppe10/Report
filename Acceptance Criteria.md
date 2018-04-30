@@ -19,3 +19,16 @@ ___
 2) The user should be able to request information from the website, based on the input they typed.
 
 3) The user would not be able to submit a request if no mandatory information isn't entered.
+
+___
+
+##### User story 2:
+As a user, i want to enter a book title, and the application plots all cities mentioned in this book onto a map, so that I can get a visualization of books onto the map.
+
+##### Acceptance Criteria:
+1) The user should be able to enter a book title.
+
+2) The user should be able to see a map of all cities mentioned in a book.
+
+3) The user would not be able to see a map, if no book titles are given
+
