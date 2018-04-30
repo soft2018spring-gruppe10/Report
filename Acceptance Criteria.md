@@ -32,3 +32,14 @@ As a user, i want to enter a book title, and the application plots all cities me
 
 3) The user would not be able to see a map, if no book titles are given
 
+___
+##### User story 3:
+As a user, i want to enter an authors name and get all books by that author and a map of with plots of all cities mentioned in any of the books so that i can find a book that i want to read.
+
+##### Acceptance Criteria:
+
+1) The user should be able to enter an authors name.
+
+2) The user should be able to get all books by the requested author.
+
+3) The user should be able to see a map with plots of all cities.
