@@ -1,4 +1,4 @@
-# Database Exam Report
+# Exam Report
 - By Group 10: Kristian (cph-kf96) & Edmond (cph-) & Joseph (cph-) & Daniel (cph-dh136)
 
 ## Abstract
