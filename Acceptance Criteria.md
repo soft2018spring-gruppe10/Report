@@ -14,11 +14,9 @@ ___
 "As a user, I want to enter a city, and the application returns all book titles with with corresponding authors, that mentions this specific city, so that I can find the book that I want to read."
 
 ##### Acceptance criteria:
-1) The user should be able to enter a city.
-
-2) The user should be able to request information from the website, based on the input they typed.
-
-3) The user would not be able to submit a request if no mandatory information isn't entered.
+Given a user picks copenhagen as a city
+When the user ask for all book titles with corresponding authors that is mentioned in copenhagen
+Then the user will get all books with corresponding authors that is mentioned in copenhagen
 
 ___
 
@@ -26,23 +24,21 @@ ___
 As a user, i want to enter a book title, and the application plots all cities mentioned in this book onto a map, so that I can get a visualization of books onto the map.
 
 ##### Acceptance Criteria:
-1) The user should be able to enter a book title.
-
-2) The user should be able to see a map of all cities mentioned in a book.
-
-3) The user would not be able to see a map, if no book titles are given
+Given a user gives a book title "Salute to Adventurers"
+When the user ask for all cities mentioned in that book
+And the user ask for all those cities plotted on a map
+Then the user will get a map with all cities mentioned in the book plotted on that map.
 
 ___
 ##### User story 3:
 As a user, i want to enter an authors name and get all books by that author and a map of with plots of all cities mentioned in any of the books so that i can find a book that i want to read.
 
 ##### Acceptance Criteria:
-
-1) The user should be able to enter an authors name.
-
-2) The user should be able to get all books by the requested author.
-
-3) The user should be able to see a map with plots of all cities.
+Given a User gives a author name "William Shakespeare"
+When the user ask for all books by that author
+And the user ask for all cities mentioned in those books
+And the user ask for all those cities plotted on a map
+Then the user will get a map with all cities mentioned in those books plotted on that map.
 
 ___
 
@@ -51,10 +47,11 @@ ___
 As a user, i want to give a location and get all books which mentions a city in the vicinity of that location, so i can find a book that i want to read.
 
 ##### Acceptance Criteria:
+Given a User gives a location "10,30"
+When the user ask for all books that mentions cities near that location
+Then the user gets all books mentioning a city near that location
 
-1) The user should be able to specify a location
+##### Questions
+- is it correct that given is as it is, compared to the above user stories arrangement style.   
 
-2) The user should be able to get all books which mentions a city in the vicinity of the location
-
-
-
+- does it need to be more specific as in 100% specific data, given the data size would enlarge these statements alot.   
