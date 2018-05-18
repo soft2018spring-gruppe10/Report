@@ -219,9 +219,12 @@ We have 4 simple jobs
 [![https://gyazo.com/160f0b378c7674364ac563e3dd5bcf54](https://i.gyazo.com/160f0b378c7674364ac563e3dd5bcf54.png)](https://gyazo.com/160f0b378c7674364ac563e3dd5bcf54)
 
 ###  - Inclusion of Gherkin and Cucumber
-
+in regards to our previous we mentioned three additional assignments that had to be cleared, one of these was a test assignment that
+focused on writing tests using Gherkins syntax and Cucumber testing, as we lacked business logic and we had difficulty in maintaining
+a overview of the API's test functions, it was proposed to set in stone the excat requirements of the API using Cucumber, we used this to help write the tests that would allow us to finally make the implementation of our API, but in retrospect we didn't take the time to write the Cucumber tests at that time and only used the Gherkin syntax for the development of the code tests, we refactored later to verify Syntax agreement with Cucumber.
 ####  - Acceptance Criteria
 ```
+Written
 Date: 29/04/2018
 ```
 
@@ -276,8 +279,13 @@ Then the user gets all books mentioning a city near that location
 ```
 
 ###  - End of Main Sprint
+At the end of the sprint we combined our Burndown Chart, to allowed us general overview of the progression of the project, another reason for this was that we weren't able to do advance documentation of our progress, given the free use of waffle.io doesn't give that many tools, the burndown chart looked like this.
+![](https://i.gyazo.com/673ed384c147080a0dcc969959721fc7.png)   
+At this point in time we had finished up alot of the main issues we had stumpled into, although the data proved to be a continoues problem we had to wrestle with, given we had several failures in downsizing the data into a digestable size, where 2 instances wasted 3 days of computational power on a blocker, that was third party software related. but we had a useable data set which we used as our actively tested dataset, given there were no modification requirements of the data, so it made more sense than to use mocked database.
 ## 4. Last Sprint
 ###  - Report
+As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of rafactoring our test cases and the product.
 ###  - Refactoring
+
 ###  - End of Last Sprint
 ## 5. Conclusion
