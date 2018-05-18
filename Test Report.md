@@ -13,6 +13,7 @@
 3. Main Development Sprint
   - The Product
   - Left Shift Testing
+  - Continouse Integration & Delivery
   - Inclusion of Gherkin and Cucumber
     - Acceptance Criteria
   - End of Main Sprint
@@ -164,14 +165,59 @@ The alpha test is conducted at the developer's site by proxy product owner.
 ###  - End of Initial Sprint
 At the end of our initial sprint we had cleared out our current time obstacles of the project, we initially tried to log our efforts doing this time, but found little time to go into a habit of logging our meetings, we also found this highly redundant as the projects requirements and the situation would change on a daylie basis, so past writings became obsolete rather quickly in the agile development.
 At this time one of our 4 members had left our group, and our perceived timetable narrowed down further as we hurried to adapt to
-the new circumstances, it was at this time we realised we havn't figure out much in terms of business testing, other than left shift testing.
+the new circumstances, it was at this time we realised with the use of our burndown chart from [Waffle.io](https://waffle.io/) that we were behind schedule as seen in our two minor test review sprints   
+"note that test review 1 is faulty and the two last where done but it's still 1 day behind"   
+![](https://i.gyazo.com/b19ec1bd7e0e7b2918b1a4c99cec9fd7.png)   
+![](https://i.gyazo.com/49fd3de81560e78a5c8a4438d24cefac.png)   
+we also had a overall project deadline, where we assigned the rest of our task on, our deadline for delivery on test was on the 25th
+and database was on the 28th, we choose to say the total final deadline was on the 24th to ensure adaptability at the last stretch
+incase of unforseen events.   
+![](https://i.gyazo.com/e685f66a9568c04f268cd3f0c6ae1fd3.png)   
+With this overview we found out, that we havn't gotten much documentation or plans in terms of business testing, other than left shift testing.
 ## 3. Main Development Sprint
 ###  - The Product
-At the start of the main product
+At the start of the main sprint we had the system design ready, for a short introduction the system consist of 3 parts, a frontend web client, that allows the product owner to interact with the product, a backend API that handles the web clients requests and calls the databases for the request data, and the databases that consist of multiple different database which was required by the database course.
+
+#### API
+##### Functionality:
+This api's functionality is to link the frontend with the database. This api will do the heavily lifting of business logic and database interactions. It will query database for information tranform the data into a valid form and reduce the amount of information needed for the frotnend. It will send information as json. 
+[![https://gyazo.com/b66a557ce5bf48562d6b2f858d78f0e3](https://i.gyazo.com/b66a557ce5bf48562d6b2f858d78f0e3.png)](https://gyazo.com/b66a557ce5bf48562d6b2f858d78f0e3)
+
+The Api is capable of getting the information which correspond with the end-user queries in the project descriptions.
+
+##### Overview
+![](https://github.com/soft2018spring-gruppe10/Backend/blob/master/Documentation/Pictures/Classdiagram2.png)
+
+##### Code quality
+We have designed the system with high quality in focus. We wanted to be able to maintain and test the code we build. We have taken advantage of interfaces throughout the system. Notably the DataAcessor and the DataObjects, these can be switched out with any implementation of these interfaces. This has resulted in a very decoupled system. To change how the objects are being serialized, we can change the code 1 place and it works automaticly for all dataobjects. If we want to change the format of one of the protocols, we only need change in one place. furthermore, we can change the Database freely because of the DataAcessor interface. It has also caused very low technical dept. This is the outcome of good design, which has surfaces with the use of a testing mindset.
+
+To put it our maintability into perspective, we had a case where we wanted to have all data in all dataobjects which contained city cordinates to have different names. we wanted to change from latitude to lat and longitude to lng, because it was easy and more convinenient for the front-end library to plot in these objects with these names that way. All we had to do to change the whole systems behavior when it came to handling cities with cordinates data was the following commits:
+- [change](https://github.com/soft2018spring-gruppe10/Backend/commit/6032c043d54f325a4a5b92bb9f04a594c6338243) /Apart from changing jdk
+- [tests were using these values](https://github.com/soft2018spring-gruppe10/Backend/commit/ef825157a7f78af28d8afdd78e2de791a3ff3218)
+
 ###  - Left Shift Testing
 As our main sprint went into effect, we found ourself focusing on both loosely upholding left shift testing guidelines while managing
 the enomous amount of data we had to process, but we choose to trust in eachothers ability to document and uphold agile test standards,
-so that we could focus on getting the data handled, in retrospect it would have been wiser to start production of the main part of the projec
+so that we could focus on getting the data handled.
+
+###  - Continouse Integration & Delivery
+We have setup a jenkins server with the following architecture:
+
+![](https://github.com/soft2018spring-gruppe10/Backend/blob/master/Documentation/Pictures/Deploymentdiagram1.png)
+
+Because of time and money restrictions we do not practise ideal procedures. We are deploying staging to the build server, and are using test database as staging database. Idealy we would like to have a seperate enviroment for the whole staging enviroment, idealy allmost identical to the/a production enviroment. All the containers talk easily together in a custom docker bridge network shared on the droplet. This way, the dns is created and can be accesed by the docker containers name with the ingress network.
+
+[![https://gyazo.com/b7c8cdd4c19532aa2dda24ef68a985ea](https://i.gyazo.com/b7c8cdd4c19532aa2dda24ef68a985ea.png)](https://gyazo.com/b7c8cdd4c19532aa2dda24ef68a985ea)
+
+We have 4 simple jobs
+
+- 1. Test and build api
+- 2. Stage api
+- 3. build and stage website
+- 4. system test (ui-testing)
+
+[![https://gyazo.com/160f0b378c7674364ac563e3dd5bcf54](https://i.gyazo.com/160f0b378c7674364ac563e3dd5bcf54.png)](https://gyazo.com/160f0b378c7674364ac563e3dd5bcf54)
+
 ###  - Inclusion of Gherkin and Cucumber
 
 ####  - Acceptance Criteria
