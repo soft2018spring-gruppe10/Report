@@ -2,26 +2,26 @@
 > by Kristian, Daniel, Edmund
 
 ## Table of Content
-1. Summary
+**1. Summary**
   - Introduction
-  - Requirements Analysis Document
-2. Initial Design Sprint
+  - Requirements Analysis Document   
+**2. Initial Design Sprint**
   - The Initial Conditions
   - The Data
   - Test Strategy
-  - End of Initial Sprint
-3. Main Development Sprint
+  - End of Initial Sprint   
+**3. Main Development Sprint**
   - The Product
   - Left Shift Testing
   - Continouse Integration & Delivery
   - Inclusion of Gherkin and Cucumber
     - Acceptance Criteria
-  - End of Main Sprint
-4. Last Sprint
+  - End of Main Sprint   
+**4. Last Sprint**
   - Report
   - Refactoring
-  - End of Last Sprint
-5. Conclusion
+  - End of Last Sprint   
+**5. Conclusion**
 
 ## 1. Summary
 ###  - Introduction
