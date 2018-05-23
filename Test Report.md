@@ -284,8 +284,11 @@ At the end of the sprint we combined our Burndown Chart, to allowed us general o
 At this point in time we had finished up alot of the main issues we had stumpled into, although the data proved to be a continoues problem we had to wrestle with, given we had several failures in downsizing the data into a digestable size, where 2 instances wasted 3 days of computational power on a blocker, that was third party software related. but we had a useable data set which we used as our actively tested dataset, given there were no modification requirements of the data, so it made more sense than to use mocked database.
 ## 4. Last Sprint
 ###  - Report
-As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of rafactoring our test cases and the product.
+As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of refactoring our test cases and the product.
 ###  - Refactoring
-
+Given we had focused on doing 4 databases instead of 2, resulted in us taking shortest path to achieve functional test code and product. When we began to run benchmark test the problems showed themselves, as it was needed to have both the unuptimized data queries and uptimized. Several parts of the code needed to be modified or even reworked depending on a case by case basis, yet the recursive unit test we defined early on in development allowed us to quickly pinpoint errors in the fresh code, helping to reduce the cost of refactoring greatly.
 ###  - End of Last Sprint
+At the very end our Burndown chart had increase greatly in size as we used issue tracking to track all documentation needs we had to finish for both this Test Report and the Database Report, as of writing this the Burndown chart looked like this ![](https://i.gyazo.com/53593b0c31a14268d31d58a95c0534e7.png)    
+it does look like we slacked behind, but that's partly because we don't handle the size of each issue and treat them all equally important, this is a issue as major things like parts of the Test report or Full checkup is considered the same as a returning refactor review.
+
 ## 5. Conclusion
