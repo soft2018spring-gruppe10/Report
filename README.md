@@ -73,7 +73,7 @@ The system should have a base UI that allows for user with limited exposure to p
 The system may not crash doing any queries.
 
 3. Performance   
-The system must handle each query on a case by case basis as fast as possible, but must never exceed 10 seconds duration for the user to see results from the given command.
+The system must handle each query on a case by case basis as fast as possible, but must never exceed 2 seconds duration for the user to see results from the given command.
 
 4. Supportability   
 The system must allow use through popular web browsers like chrome, firefox or safari.
@@ -156,7 +156,7 @@ Functional testing will be covered through the use of automated black box unit t
 - **System Testing:**   
 System testing will be done with integration through the use of black box tests.   
 - **Performance Testing:**   
-Check the response time is below 1 second   
+Check the response time is below 2 second   
 - **User acceptance testing:**   
 acceptance criteria will be tested though the use of automated cucumber tests.   
 - **Alpha testing:**   
