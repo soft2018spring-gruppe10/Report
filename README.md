@@ -212,7 +212,14 @@ As the last Sprint begins our focus was divided, we had to finish up the product
 Given we had focused on doing 4 databases instead of 2, resulted in us taking the shortest path to achieving functional test code and product. When we began to run benchmark test the problems showed themselves, as it was needed to have both the unoptimized data queries and optimized. Several parts of the code needed to be modified or even reworked depending on a case by case basis, yet the integration test we could use for regression testing, we defined early on in development allowed us to quickly pinpoint errors in the fresh code, helping to reduce the cost of refactoring greatly.
 
 ####  - Static Analysis
-We wished we had remembered to document our earlier Static analysis from the project, but as stated all the way back at the initial sprint, logging our progress seemed at the time costly and with little value to our timetable, therefore we finally documenting it at the end of the project.
+We wished we had remembered to document our earlier Static analysis from the project, but as stated all the way back at the initial sprint, logging our progress seemed at the time costly and with little value to our timetable, therefore we finally documenting it at the end of the project. 
+
+##### - Code Coverage
+We have also done code coverage with IntelliJ's own code coverage tool and JaCoCo, We found they both produced samy results. To view our code coverage report. clone backend repository and open index.html file in [StaticAnalysis Folder](https://github.com/soft2018spring-gruppe10/Backend/tree/master/Documentation/StaticAnalysis) with a browser to open the full report. To see a snapshot of the overview report.
+[![https://gyazo.com/5e63f210ddc8413fd8a3366a663e657d](https://i.gyazo.com/5e63f210ddc8413fd8a3366a663e657d.png)](https://gyazo.com/5e63f210ddc8413fd8a3366a663e657d)
+
+As can be seen, we do have close to 100% test coverage, we don't get all the way up there, because we chose not to test to simple methods such as "close()" method for dataaccessors. They are one-liners to close the database session, and we expect the third-party systems to have been tested.
+
 
 #####  - Cyclic Complexity
 Using the IntelliJ plugin [MatricsReloaded](https://plugins.jetbrains.com/plugin/93-metricsreloaded), We have calculated the Cyclic Complexity for the hole projects using CC2, to be at generally at around 3 or lower, while a few outliers complexity hit's the 6-7 level, which it could easily be refactored into a less complex solution, however due to time constraints we've chosen to reflect on this in our documentation instead of spending time refactoring these edge cases.   
