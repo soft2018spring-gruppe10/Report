@@ -11,14 +11,17 @@
   - Test Strategy
   - End of Initial Sprint
 3. Main Development Sprint
+  - Beginning of Production
   - The Product
   - Left Shift Testing
   - Continouse Integration & Delivery
   - Inclusion of Gherkin and Cucumber
     - Acceptance Criteria
+  - Progress Logging
   - End of Main Sprint
 4. Last Sprint
   - Report
+  - Benchmark Integration
   - Refactoring
   - End of Last Sprint
 5. Conclusion
@@ -187,7 +190,11 @@ Likewise we managed to set in stone our test foundation which at first slowed us
 
 ## 4. Last Sprint
 ###  - Report
-As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of refactoring our test cases and the product.
+As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of refactoring our test cases and the product. Likewise we also realized at this stage that we havn't perfectly followed Performance or Intergration test practices, as we had mostly been neck deep in development, The Giraffe dilema comes to mind on this level over oversight, yet it was tasked of us to benchmark our databases performance and document our findings, which we both had to compared with the product and the databases, so that we would be able to argue which database would be more suitable for the given task, although late in development, this gave us a good point to start testing this aswell.
+
+###  - Benchmark Integration
+
+
 ###  - Refactoring
 Given we had focused on doing 4 databases instead of 2, resulted in us taking shortest path to achieve functional test code and product. When we began to run benchmark test the problems showed themselves, as it was needed to have both the unuptimized data queries and uptimized. Several parts of the code needed to be modified or even reworked depending on a case by case basis, yet the recursive unit test we defined early on in development allowed us to quickly pinpoint errors in the fresh code, helping to reduce the cost of refactoring greatly.
 ###  - End of Last Sprint
