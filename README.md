@@ -25,6 +25,9 @@
   - Report
   - Refactoring
     - Static Analysis
+      - Cyclic Complexity
+      - Coding Standards
+      - Quality/Coupling and Polymorphism
   - Intergration Testing
   - Performance Testing
   - Last minute Feature "Logger"
@@ -211,6 +214,15 @@ As the last Sprint begins our focus were devided, we had to finish up the produc
 Given we had focused on doing 4 databases instead of 2, resulted in us taking shortest path to achieve functional test code and product. When we began to run benchmark test the problems showed themselves, as it was needed to have both the unuptimized data queries and uptimized. Several parts of the code needed to be modified or even reworked depending on a case by case basis, yet the recursive unit test we defined early on in development allowed us to quickly pinpoint errors in the fresh code, helping to reduce the cost of refactoring greatly.
 
 ####  - Static Analysis
+We wished we had remmebered to document our earlier Static analysis from the project, but as stated all the way back at the initial sprint, logging our progress seemed at the time costly and with little value to our time table, therefor we finally documenting it at the end of the project.
+
+#####  - Cyclic Complexity
+Using the IntelliJ plugin [MatricsReloaded](https://plugins.jetbrains.com/plugin/93-metricsreloaded), We have calculated the Cyclic Complexity for the hole projects using CC2, to be at generally at around 3 or lower, while a few outlier who's complexity hit's the 6-7 level, which is could easilly be refactored into a less complex solution, however due to time constraints we've choosen to reflect on this in our documentation instead of spending time refactoring these edge cases.   
+See [Cyclic Complexity Report](https://github.com/soft2018spring-gruppe10/Backend/blob/master/Documentation/StaticAnalysis/Cyclic%20Complexity.csv) for more details.
+
+#####  - Coding Standards
+
+#####  - Quality/Coupling and Polymorphism
 
 ###  - Intergration Testing
 
