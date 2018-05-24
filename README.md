@@ -189,6 +189,9 @@ At the end of the sprint we combined our Burndown Chart, to allowed us general o
 ![](https://i.gyazo.com/673ed384c147080a0dcc969959721fc7.png)
 
 ###  - Dataset Testing
+Although we had trouble with the data set initially, we did manage to aquire a functional data set that was close to the final stage, this helped us as the data set didn't need to change, so it was possible to use it instead of mocking a database. Since we already setup our Test cases at this point, we were able to run test cases and compare the expected results with the actual results from the code, this way we not only had our own known state that the tests would respond, we also gained insight in which database was acting out of line, allowing for quicker debugging of the code related to that database.
+
+Initially we didn't have a smaller sample size for more predictable testing, in reality we mostly compared the tests and found the outliers, which we then investigated to find faults. Around the second test review we were told it's in our best interest to create a smaller test set, so that we could with 100% certaincy what would input would produce what output in black box unit tests, the test data ended up looking like [this](https://github.com/soft2018spring-gruppe10/Databases/tree/master/TestData). While building this smaller data set we found it useful to create a stubbed data accesor, so that we could refactor our previous tests into a more refined state, the stubbed data accesor can be found [here](https://github.com/soft2018spring-gruppe10/Backend/blob/master/DBParadigmsGroup10/src/main/java/DataAcessors/StubbedDataAccessor.java).
 
 ###  - Frontend and UI testing
 
