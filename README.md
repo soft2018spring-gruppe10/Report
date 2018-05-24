@@ -221,7 +221,7 @@ Using the IntelliJ plugin [MatricsReloaded](https://plugins.jetbrains.com/plugin
 See [Cyclic Complexity Report](https://github.com/soft2018spring-gruppe10/Backend/blob/master/Documentation/StaticAnalysis/Cyclic%20Complexity.csv) for more details.
 
 #####  - Coding Standards
-
+For code standard we choose to use the IDE [IntelliJ](https://www.jetbrains.com/idea/)'s standards, while also refactoring variables using it's advices on issues it found, Besides typo's and most naming conventions, yet ignoring others we disagreed with on the tool but agreed on as a collective, however we did implement roughly 80% of it's solutions.
 #####  - Quality/Coupling and Polymorphism
 
 ###  - Intergration Testing
