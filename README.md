@@ -18,11 +18,16 @@
   - Inclusion of Gherkin and Cucumber
     - Acceptance Criteria
   - Progress Logging
+  - Dataset Testing
+  - Frontend and UI testing
   - End of Main Sprint
 4. Last Sprint
   - Report
-  - Benchmark Integration
   - Refactoring
+    - Static Analysis
+  - Intergration Testing
+  - Performance Testing
+  - Last minute Feature "Logger"
   - End of Last Sprint
 5. Conclusion
 
@@ -181,7 +186,11 @@ to reduce size of documentation, Acceptance criteria can be found [here](https:/
 
 ###  - Progress Logging
 At the end of the sprint we combined our Burndown Chart, to allowed us general overview of the progression of the project, another reason for this was that we weren't able to do advance documentation of our progress, given the free use of waffle.io doesn't give that many tools, the burndown chart looked like this.
-![](https://i.gyazo.com/673ed384c147080a0dcc969959721fc7.png)  
+![](https://i.gyazo.com/673ed384c147080a0dcc969959721fc7.png)
+
+###  - Dataset Testing
+
+###  - Frontend and UI testing
 
 ###  - End of Main Sprint
 At this point in time we had finished up alot of the main issues we had stumpled into, although the data proved to be a continoues problem we had to wrestle with, given we had several failures in downsizing the data into a digestable size, where 2 instances wasted 3 days of computational power on a blocker, that was third party software related. but we had a useable data set which we used as our actively tested dataset, given there were no modification requirements of the data, so it made more sense than to use mocked database.
@@ -193,11 +202,17 @@ It must be stressed this was a unusual Sprint, as it's very much larger than bot
 ###  - Report
 As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of refactoring our test cases and the product. Likewise we also realized at this stage that we havn't perfectly followed Performance or Intergration test practices, as we had mostly been neck deep in development, The Giraffe dilema comes to mind on this level over oversight, yet it was tasked of us to benchmark our databases performance and document our findings, which we both had to compared with the product and the databases, so that we would be able to argue which database would be more suitable for the given task, although late in development, this gave us a good point to start testing this aswell.
 
-###  - Benchmark Integration
-
-
 ###  - Refactoring
 Given we had focused on doing 4 databases instead of 2, resulted in us taking shortest path to achieve functional test code and product. When we began to run benchmark test the problems showed themselves, as it was needed to have both the unuptimized data queries and uptimized. Several parts of the code needed to be modified or even reworked depending on a case by case basis, yet the recursive unit test we defined early on in development allowed us to quickly pinpoint errors in the fresh code, helping to reduce the cost of refactoring greatly.
+
+####  - Static Analysis
+
+###  - Intergration Testing
+
+###  - Performance Testing
+
+###  - Last minute Feature "Logger"
+
 ###  - End of Last Sprint
 At the very end our Burndown chart had increase greatly in size as we used issue tracking to track all documentation needs we had to finish for both this Test Report and the Database Report, as of writing this the Burndown chart looked like this ![](https://i.gyazo.com/53593b0c31a14268d31d58a95c0534e7.png)    
 it does look like we slacked behind, but that's partly because we don't handle the size of each issue and treat them all equally important, this is a issue as major things like parts of the Test report or Full checkup is considered the same as a returning refactor review.
