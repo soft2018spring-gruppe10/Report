@@ -240,8 +240,16 @@ Calculates the degree of polymorphism in a project as a whole. Essentially it re
 ```
 
 ###  - Intergration Testing
+Given the lack of business logic in the project as a hole, we found it hard to implement unit tests for many of the system intergration cases, likewise we also used alot of third party systems that we were told to trust from our reviews, since we should assume they have tested thier system for us, and it would otherwise results in mostly exhaustive testing for us.
+
+at this point in time we use the full dataset, which ideally we would only use the test data. We did make said data but only managed to use said data for the stubbed tests, and since we at this stage had the final data set with working databases, we found more value in leaving the stubs behind but taking the knowledge with us to the rest of the development.
+
+we did manage to refactor our initial implementation tests into two seperate parameterized tests, for both Intergration testing and Performance testing, See [Intergration tests](https://github.com/soft2018spring-gruppe10/Backend/blob/master/DBParadigmsGroup10/src/test/java/Interfaces/ParameterizedIntegrationTest.java) for more details.
 
 ###  - Performance Testing
+As stated earlier in intergration section, we managed to split up our implementation tests into thier respective parts, see [Performance tests](https://github.com/soft2018spring-gruppe10/Backend/blob/master/DBParadigmsGroup10/src/test/java/Interfaces/ParameterizedPerformanceTest.java) for the refactored version.
+
+With these refactored tests we managed to implement a full benchmark test for the database section, at this stage we intentionally used the full data set, since it was required of us to make accurate benchmark of the different databases performance, see [Benchmark tests](https://github.com/soft2018spring-gruppe10/Backend/blob/master/DBParadigmsGroup10/src/test/java/Interfaces/DatabaseBenchmarkTest.java) for details on these.
 
 ###  - Last minute Feature "Logger"
 
