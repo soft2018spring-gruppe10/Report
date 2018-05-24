@@ -92,7 +92,7 @@ developer and bug/defect status will be updated accordingly.
 #### Deployment/Delivery:
 • Once all bugs/defect reported after complete testing is fixed and no other bugs are found, a report will be deployed to staging environment by the Continues Integration platform.   
 
-• Once build is in staging environment proxy product owner.   
+• Once build is in staging environment proxy product owner will be notified.   
 
 • Once Product owner accepts staging environment, the build will be deployed to production.
 
