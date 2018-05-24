@@ -251,6 +251,13 @@ As stated earlier in intergration section, we managed to split up our implementa
 
 With these refactored tests we managed to implement a full benchmark test for the database section, at this stage we intentionally used the full data set, since it was required of us to make accurate benchmark of the different databases performance, see [Benchmark tests](https://github.com/soft2018spring-gruppe10/Backend/blob/master/DBParadigmsGroup10/src/test/java/Interfaces/DatabaseBenchmarkTest.java) for details on these.
 
+After finalizing this we found it prudent to implement profiling, since the idea of the test project is to deliver a pipeline, where future implementations and refactoring should be commenplace, we used VisualVM [link to github](https://visualvm.github.io/), plugin for [IntelliJ](https://plugins.jetbrains.com/plugin/7115-visualvm-launcher) to Profile our code as can be seen in the following images.   
+Note we don't automate these profilings stats though we would have done so given we had time.   
+![](https://i.gyazo.com/8bbddf559b6ed01f382925d7f0fe732d.png)
+![](https://i.gyazo.com/89986b7f2db22d0cf5e240364b673430.png)
+![](https://i.gyazo.com/05c0bc9b5b7991462ee888c9ff4df6cb.png)
+![](https://i.gyazo.com/ba69a3b67b86c59edae58a8f08aeabab.png)
+
 ###  - Last minute Feature "Logger"
 
 ###  - End of Last Sprint
