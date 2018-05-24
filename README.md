@@ -222,7 +222,21 @@ See [Cyclic Complexity Report](https://github.com/soft2018spring-gruppe10/Backen
 
 #####  - Coding Standards
 For code standard we choose to use the IDE [IntelliJ](https://www.jetbrains.com/idea/)'s standards, while also refactoring variables using it's advices on issues it found, Besides typo's and most naming conventions, yet ignoring others we disagreed with on the tool but agreed on as a collective, however we did implement roughly 80% of it's solutions.
+
 #####  - Quality/Coupling and Polymorphism
+Using the plugin [MatricsReloaded](https://plugins.jetbrains.com/plugin/93-metricsreloaded), we have calculated the code quality to be to be the following procentages from the table below.
+
+Project |     AHF |    AIF |    CF |    MHF |    MIF |     PF |
+Project |    Attribute hiding factor |    Attribute inheritance  factor |    Coupling factor |    Method hiding factor |    Method inhereitance factor |    Polymorphisms factor
+--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:
+project    52,31%    0,95%    19,53%    22,35%    8,04%    79,49%
+
+It's initially surprising for us that our code have this level of quality, as we mostly have been in a constant litteral sprint to finish this project. As shown in the table it can be seen that roughly 20% of our code is tightly coupled, which we think is the fruit of our focus on polymophism, which is 80% of our code!
+
+Note from the tool's description of how it calculates polymorphism. To get a detailed explanation of these metrics. please see [MetricsReloaded MOOD documentation](http://www.aivosto.com/project/help/pm-oo-mood.html)
+```
+Calculates the degree of polymorphism in a project as a whole. Essentially it reports on the probability that a given method will be overridden in a subclass. 
+```
 
 ###  - Intergration Testing
 
