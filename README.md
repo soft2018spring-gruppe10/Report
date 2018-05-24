@@ -119,10 +119,17 @@ we also had a overall project deadline, where we assigned the rest of our task o
 and database was on the 28th, we choose to say the total final deadline was on the 24th to ensure adaptability at the last stretch
 incase of unforseen events.   
 ![](https://i.gyazo.com/e685f66a9568c04f268cd3f0c6ae1fd3.png)   
-With this overview we found out, that we havn't gotten much documentation or plans in terms of business testing, other than left shift testing.
+With this overview we found out, that we havn't gotten much documentation or plans in terms of business testing, other than left shift testing, which in turn didn't please the product owner as we didn't have any business value ready from this initial sprint, however we didn't lose the product owners faith, as our argumentation for clearing blockers gave value to future sprints.
 ## 3. Main Development Sprint
+###  - Beginning of Production
+At the start of the main sprint we had the system design ready, most blockers where cleared out except for the data which was a continous task to handle. Since we've been mostly shown tools and trades in the form of Java and related tools of the Java lanquagde, we found value in standardizing our production lanquagde as Java, this allowed us to use systems and tools we had previous knowledge on.
+
+For the main sprint we choose to focus on making the initial foundation made with tests, so that we would gain a unified understanding of all feature communication, and allow for decoupled development of the systems, this gives great advantages for testing individual components, in comparison to others in the same system, since a decoupled system allows the individual developer to use mocks and stubs to thier hearts contend, while following the guidelines of the documentation.
+
+because of the paralles work with the Database couse, we found value in finishing up the data, so that we would have actual test data to use in our TDD process. We also needed a continouse integration and delivery system, to furfill our promises to the proxy product owner, we would have to ensure this would also be done in this sprint to enable deployment of the databases for the database course aswell.
+
 ###  - The Product
-At the start of the main sprint we had the system design ready, for a short introduction the system consist of 3 parts, a frontend web client, that allows the product owner to interact with the product, a backend API that handles the web clients requests and calls the databases for the request data, and the databases that consist of multiple different database which was required by the database course.
+For a short introduction, the system consist of 3 parts, a frontend web client, that allows the product owner to interact with the product, a backend API that handles the web clients requests and calls the databases for the request data, and the databases that consist of multiple different database which was required by the database course.
 
 #### API
 ##### Functionality:
@@ -165,16 +172,19 @@ We have 4 simple jobs
 [![https://gyazo.com/160f0b378c7674364ac563e3dd5bcf54](https://i.gyazo.com/160f0b378c7674364ac563e3dd5bcf54.png)](https://gyazo.com/160f0b378c7674364ac563e3dd5bcf54)
 
 ###  - Inclusion of Gherkin and Cucumber
-in regards to our previous we mentioned three additional assignments that had to be cleared, one of these was a test assignment that
-focused on writing tests using Gherkins syntax and Cucumber testing, as we lacked business logic and we had difficulty in maintaining
-a overview of the API's test functions, it was proposed to set in stone the excat requirements of the API using Cucumber, we used this to help write the tests that would allow us to finally make the implementation of our API, but in retrospect we didn't take the time to write the Cucumber tests at that time and only used the Gherkin syntax for the development of the code tests, we refactored later to verify Syntax agreement with Cucumber.
+in regards to our previous sprint we mentioned three additional assignments that had to be cleared, one of these was a test assignment that focused on writing tests using Gherkins syntax and Cucumber testing, as we lacked business logic and we had difficulty in maintaining a overview of the API's test functions, it was proposed to set in stone the excat requirements of the API using Cucumber, we used this to help write the tests that would allow us to finally make the implementation of our API, but in retrospect we didn't take the time to write the Cucumber tests at that time and only used the Gherkin syntax for the development of the code tests, we refactored later to verify Syntax agreement with Cucumber.
 ####  - Acceptance Criteria
 to reduce size of documentation, Acceptance criteria can be found [here](https://github.com/soft2018spring-gruppe10/Report/blob/master/documentation/Acceptance%20Criteria.md)
 
-###  - End of Main Sprint
+###  - Progress Logging
 At the end of the sprint we combined our Burndown Chart, to allowed us general overview of the progression of the project, another reason for this was that we weren't able to do advance documentation of our progress, given the free use of waffle.io doesn't give that many tools, the burndown chart looked like this.
-![](https://i.gyazo.com/673ed384c147080a0dcc969959721fc7.png)   
+![](https://i.gyazo.com/673ed384c147080a0dcc969959721fc7.png)  
+
+###  - End of Main Sprint
 At this point in time we had finished up alot of the main issues we had stumpled into, although the data proved to be a continoues problem we had to wrestle with, given we had several failures in downsizing the data into a digestable size, where 2 instances wasted 3 days of computational power on a blocker, that was third party software related. but we had a useable data set which we used as our actively tested dataset, given there were no modification requirements of the data, so it made more sense than to use mocked database.
+
+Likewise we managed to set in stone our test foundation which at first slowed us down due to pair programming speed, yet the quality and the insight of those session further increased the speed of development both at the later parts of this sprint and beyond. Since the API was finalized early on, it was also possible to split up some task in mini sprints to speed up development process until the end.
+
 ## 4. Last Sprint
 ###  - Report
 As the last Sprint begins our focus were devided, we had to finish up the product so the final parts were in place for documentation on the database course, though it was possible to write this report doing the last sprint, as the test side were in practice "done" at this stage, yet we choose to focus on additional testing through the use of refactoring our test cases and the product.
@@ -184,6 +194,7 @@ Given we had focused on doing 4 databases instead of 2, resulted in us taking sh
 At the very end our Burndown chart had increase greatly in size as we used issue tracking to track all documentation needs we had to finish for both this Test Report and the Database Report, as of writing this the Burndown chart looked like this ![](https://i.gyazo.com/53593b0c31a14268d31d58a95c0534e7.png)    
 it does look like we slacked behind, but that's partly because we don't handle the size of each issue and treat them all equally important, this is a issue as major things like parts of the Test report or Full checkup is considered the same as a returning refactor review.
 
+It must be stressed this was a unusual Sprint, as it's very much larger than both the initial and the end sprint, we havn't be able to follow Scrum too well given our team size doesn't allow for standard scrum practices, however we managed this by almost holding constant mini sprints and meetings, this enabled us to handle all issues that would arrise doing the main sprint.
 ## 5. Conclusion
 The lack of required manpower has affected the process of this project, however we where able to adjust on a moment to moment basis because of the agile development mindset. We practiced almost daylie meetings where we dicussed the current situation of the time, and adjusted focus depending on blockers and the likes, we also performed alot of pair programming because Left shift testing mindset, which in the beginning slowed down our progress and initially made us make kneejerk reactionary actions to solve issues that would arise, however these pair programming session helped foster a shared insight of the system both through active perticipation of the creation, and through recursive testing of said earlier test focused fundament.   
 One thing to note about this project, is how the test focus is more attached to the database part of the course, rather than it's own specifically designed project, this has resulted in very little business logic, so much of the test cases and techniques are left out due to redundency and in our case time constraints.
