@@ -226,10 +226,11 @@ For code standard we choose to use the IDE [IntelliJ](https://www.jetbrains.com/
 #####  - Quality/Coupling and Polymorphism
 Using the plugin [MatricsReloaded](https://plugins.jetbrains.com/plugin/93-metricsreloaded), we have calculated the code quality to be to be the following procentages from the table below.
 
-Project |     AHF |    AIF |    CF |    MHF |    MIF |     PF |
+
 Project |    Attribute hiding factor |    Attribute inheritance  factor |    Coupling factor |    Method hiding factor |    Method inhereitance factor |    Polymorphisms factor
---------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:
-project    52,31%    0,95%    19,53%    22,35%    8,04%    79,49%
+:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:
+Project |     AHF |    AIF |    CF |    MHF |    MIF |     PF
+Project |   52,31%  |  0,95%  |  19,53%  |  22,35%  |  8,04%  |  79,49%
 
 It's initially surprising for us that our code have this level of quality, as we mostly have been in a constant litteral sprint to finish this project. As shown in the table it can be seen that roughly 20% of our code is tightly coupled, which we think is the fruit of our focus on polymophism, which is 80% of our code!
 
