@@ -109,7 +109,7 @@ developer and bug/defect status will be updated accordingly.
 - **Functional Testing:**   
 Functional testing will be covered through the use of automated black box unit tests to ensure the primary requirements are met.   
 - **System Testing:**   
-System testing will be done with integration through the use of black box tests.   
+System testing will be done with integration through the use of black box tests with selenium.   
 - **Performance Testing:**   
 Check the response time is below 2 second   
 - **User acceptance testing:**   
