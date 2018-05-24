@@ -34,61 +34,7 @@ The main goal is to setup the product for continous itegration and delivery pipe
 for the product to evolve in the proposed time of Q3 2018 following the following projection. 
 ![](https://www.praqma.com/images/stories/code-storyline/storyline.jpg)
 ###  - Requirements Analysis Document
- 1. Purpose of the system   
-  The system allows users access to multiple databases containing data related to the Project Gutenberg described [here](http://www.gutenberg.org/), allowing for multitude of data request through a web interface.
-  
-  2. Scope of the system   
-  The system needs to allow the user to ask a multitude of simple commands, where the system will handle said commands using all english written books from the Project Gutenberg, the system will also contain related data about cities to handle some of the simple commands the user may ask.
-  
-  3. Objectives and success criteria of the project   
-  The system must be able to handle all the commands using any of the databases it has, aswell as handling said commands in a optimal time that allows for human reactionary use.
-  
-  4. Definitions, acronyms, and abbreviations   
-  the term commands are the reader friendly version of database queries, given the system will both handle sequential query language based database and graph based database, we choose to simply use commands as a broad term.   
-  when mentioning the system we mean the full product, both databases, API and user interface for reduction of redundancy, specification will be used on a moment to moment basis.
-  
-  5. References   
-  [Database Assignment paper](https://github.com/datsoftlyngby/soft2018spring-databases-teaching-material/blob/master/assignments/Project%20Description.ipynb)   
-  [Test assignment paper](https://github.com/datsoftlyngby/soft2018spring-test-teaching-material/blob/master/exercises/Final%20Assignment%202018.pdf)
-  
-  6. Overview   
-  The System will be a server based system that allows users to access the systems databases through the use of a web browser, the web browser will present predetermined commands that can be filled out with information from the user, which then will be handled by the API using the database to return a answer to the users command.
-
-#### Functional requirements
-The product must support atleast 2 different databases with two different paradigms.   
-The product must also allow the end user to execute at minimum the following commands:   
-1. Given a city name your application returns all book titles with corresponding authors that mention this city.   
-2. Given a book title, your application plots all cities mentioned in this book onto a map.   
-3. Given an author name your application lists all books written by that author and plots all cities mentioned in any of the books onto a map.   
-4. Given a geolocation, your application lists all books mentioning a city in vicinity of the given geolocation.   
-The Database must all at minimum contain the Author's name, the books title, names of cities, the geolocations of said cities and thier occurences in test, aswell as any other relevant information that is needed.   
-
-The product must be able to handle queries with at least five queries per type, see section above. That is, in total the end-user query test set contains at least 20 queries.
-
-#### Nonfunctional requirements
-1. Usability   
-The system should have a base UI that allows for user with limited exposure to programming to execute the commands of thier desire.
-
-2. Reliability   
-The system may not crash doing any queries.
-
-3. Performance   
-The system must handle each query on a case by case basis as fast as possible, but must never exceed 2 seconds duration for the user to see results from the given command.
-
-4. Supportability   
-The system must allow use through popular web browsers like chrome, firefox or safari.
-
-5. Implementation   
-
-
-6. Interface   
-The system requires a REST API that handles the implementation between database and Web UI.
-
-7. Packaging   
-No Packing(physical) requirements.
-
-8. Legal   
-No legal requirements.
+to reduce size of documentation, Requirements Analysis Document can be found [here](https://github.com/soft2018spring-gruppe10/Report/blob/master/documentation/Requirements%20Analysis%20Documentation.md)
 ## 2. Initial Design Sprint
 ###  - The Initial Conditions
 Doing our introduction to the project, we noted that we were to focus on documenting our initial draft of test strategies, 
@@ -223,60 +169,7 @@ in regards to our previous we mentioned three additional assignments that had to
 focused on writing tests using Gherkins syntax and Cucumber testing, as we lacked business logic and we had difficulty in maintaining
 a overview of the API's test functions, it was proposed to set in stone the excat requirements of the API using Cucumber, we used this to help write the tests that would allow us to finally make the implementation of our API, but in retrospect we didn't take the time to write the Cucumber tests at that time and only used the Gherkin syntax for the development of the code tests, we refactored later to verify Syntax agreement with Cucumber.
 ####  - Acceptance Criteria
-```
-Written
-Date: 29/04/2018
-```
-
-#### Introduction
-In regards  to our final test assignment this semester, and in response to the requirement of acceptance criterias for the first review   session with Tine, we have developed some user stories based on the requirements of the assignment description, and we have based our acceptance criterias on these user stories.
-
-##### User stories
-
-######  User story 1:
-"As a user, I want to enter a city, and the application returns all book titles with with corresponding authors, that mentions this specific city, so that I can find the book that I want to read."
-
-###### Acceptance criteria:
-```
-Given a user picks copenhagen as a city
-When the user ask for all book titles with corresponding authors that is mentioned in copenhagen
-Then the user will get all books with corresponding authors that is mentioned in copenhagen
-```
-
-###### User story 2:
-As a user, i want to enter a book title, and the application plots all cities mentioned in this book onto a map, so that I can get a visualization of books onto the map.
-
-###### Acceptance Criteria:
-```
-Given a user gives a book title "Salute to Adventurers"
-When the user ask for all cities mentioned in that book
-And the user ask for all those cities plotted on a map
-Then the user will get a map with all cities mentioned in the book plotted on that map.
-```
-
-###### User story 3:
-As a user, i want to enter an authors name and get all books by that author and a map of with plots of all cities mentioned in any of the books so that i can find a book that i want to read.
-
-###### Acceptance Criteria:
-```
-Given a User gives a author name "William Shakespeare"
-When the user ask for all books by that author
-And the user ask for all cities mentioned in those books
-And the user ask for all those cities plotted on a map
-Then the user will get a map with all cities mentioned in those books plotted on that map.
-```
-
-
-###### User story 4:
-
-As a user, i want to give a location and get all books which mentions a city in the vicinity of that location, so i can find a book that i want to read.
-
-###### Acceptance Criteria:
-```
-Given a User gives a location "10,30"
-When the user ask for all books that mentions cities near that location
-Then the user gets all books mentioning a city near that location
-```
+to reduce size of documentation, Acceptance criteria can be found [here](https://github.com/soft2018spring-gruppe10/Report/blob/master/documentation/Acceptance%20Criteria.md)
 
 ###  - End of Main Sprint
 At the end of the sprint we combined our Burndown Chart, to allowed us general overview of the progression of the project, another reason for this was that we weren't able to do advance documentation of our progress, given the free use of waffle.io doesn't give that many tools, the burndown chart looked like this.
